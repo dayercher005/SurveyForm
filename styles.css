@@ -1,0 +1,105 @@
+
+
+body{
+    background-image: url('surveyFormBackground.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(71, 61, 82);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.input{
+    display: block;
+    max-width: 600px;
+    min-width: 100px;
+    width: 55vw;
+    height: 4vh;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 0;
+}
+
+input[type="submit"]{
+    background-color: #4ed553;
+    color: white;
+    padding: 15px 150px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    width: 30vw;
+    max-width: 650px;
+    min-width: 150px;
+    margin-left: 0px;
+}
+
+
+h1, p{
+    text-align: center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    width: 55vw;
+    margin: 30px auto;
+}
+
+form{
+    background-color:hsla(247, 73%, 15%, 0.8);
+    width: 70vw;
+    max-width: 750px;
+    min-width: 350px;
+    text-align: center;
+    margin: 30px auto;
+    padding-bottom: 3.5em;
+    display: block;
+    border-radius: 10px;
+}
+
+label{
+    color: white;
+    font-family: 'Verdana', Courier, monospace;
+    display: block;
+    text-align: left;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+fieldset{
+    border: none;
+    padding: 10px;
+    padding-top: 20px;
+    margin: 20px 30px;
+    display: block;
+}
+
+fieldset[id="recommendation"]{
+    display: block;
+}
+
+textarea{
+    display: block;
+    border-radius: 5px;
+    margin-left: 0px;
+    width: 40vw;
+    max-width: 600px;
+    min-width: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    font-size: 15px;
+}
+
+
+input, select{
+    text-align: left;
+    padding: 5px;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+
+

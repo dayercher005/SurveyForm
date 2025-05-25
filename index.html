@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        
+        <h1 id="title">Survey Form</h1>
+        <p id="description"><strong>Thank you for taking the time to help us improve our services</strong></p>
+        <form id="survey-form">
+
+            <fieldset>
+                <label id="name-label" for="name">Name</label>
+                <input class="input" type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label id="email-label" for="email">Email</label>
+                <input class="input" type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label id="number-label" for="age">Age</label>
+                <input class="input" type="number" id="number" name="age" min="1" max="120" placeholder="Enter your age" required>
+            </fieldset>
+
+
+            <fieldset>
+                <label for="role"> Which option best describes your current occupation?</label>
+                <select class="input" id="dropdown">
+                    <option value="student">Student</option>
+                    <option value="full-time-job">Full Time Job</option>
+                    <option value="part-time-job">Part Time Job</option>
+                    <option value="freelancer">Freelancer</option>
+                    <option value="not-working">Not Working</option> 
+                    <option value="other">Other</option>
+                </select>
+            </fieldset>
+
+            <fieldset class="questions" id="recommendation">
+                <label for="recomend">Would you recommend this to a friend?</label>
+                <label for="Definitely"><input type="radio" id="Definitely" name="recommend" value="Definitely"> Definitely</label>
+                <label for="Maybe"><input type="radio" id="Maybe" name="recommend" value="Maybe"> Maybe</label>
+                <label for="Not-sure"><input type="radio" id="Not-sure" name="recommend" value="Not sure"> Not Sure</label>
+                <label for="Probably-not"><input type="radio" id="Probably-not" name="recommend" value="Probably not"> Probably not</label>
+                <label for="Definitely-not"><input type="radio" id="Definitely-not" name="recommend" value="Definitely not"> Definitely not</label>
+            </fieldset>
+
+            <fieldset class="questions">
+                <label for="Improvements">What would you like to see improved? (Check all that apply)</label>
+                <label for="Clealiness"><input type="checkbox" id="Cleanliness" name="Improvement" value="Cleanliness"> Cleanliness</label>
+                <label for="Facilities"><input type="checkbox" id="Facilities" name="Improvement" value="Facilities"> Facilities</label>
+                <label for="Staff"><input type="checkbox" id="Staff" name="Improvement" value="Staff"> Staff</label>
+                <label for="Food"><input type="checkbox" id="Food" name="Improvement" value="Food"> Food</label>
+                <label for="Other"><input type="checkbox" id="Other" name="Improvement" value="Other"> Other</label>
+            </fieldset>
+
+            <fieldset>
+                <label for="comments">Any other comments or suggestions?</label>
+                <textarea id="comments" name="comments" rows="5" cols="30" placeholder="Enter your comments here"></textarea>
+            </fieldset>
+
+            <fieldset id="submitContainer">
+                <label for="submit"></label>
+                <input type="submit" id="submit" value="Submit">
+            </fieldset>
+
+        </form>
+
+    </body>
+
+</html>
